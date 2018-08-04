@@ -2,13 +2,13 @@
 var kittens = ['Milo', 'Otis', 'Garfield'];
 
 function destructivelyAppendKitten(name) {
-  kittens.push(name);
-  name = 'Ralpe';
+  kittens.unshift(name);
+  name = 'Ralph';
   return kittens;
 }
 
 function destructivelyPrependKitten(name) {
-  kittens.unshift(name);
+  kittens.shift(name);
   name = 'Bob';
   return kittens;
 }
