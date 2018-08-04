@@ -8,7 +8,9 @@ function destructivelyAppendKitten(name) {
 }
 
 function destructivelyPrependKitten(name) {
-  kittens.unshift('Bob');
+  kittens.unshift(name);
+  name = 'Bob';
+  return kittens;
 }
 
 function destructivelyRemoveLastKitten() {
